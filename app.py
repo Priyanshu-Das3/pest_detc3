@@ -124,7 +124,7 @@ class PestDetectionSystem:
         status = message or f"Processed at {timestamp}"
         self.sheet.update_cell(row_num, 10, status)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     try:
         system = PestDetectionSystem()
         print("🚀 Pest Detection System Started")
